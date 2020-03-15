@@ -10,13 +10,13 @@
 # Corona Tracker
 A Coronavirus Tracker built using React and material-ui.
 
-# To Run
+## To Run
 - Clone into repo
 - Run `npm i`
 - Run `npm start` and visit localhost:3000
 
-# Screenshot
+## Screenshot
 ![Screenshot-1!](screenshots/Screenshot-1.png)
 
-# Example
+## Example
 A live demo is hosted [here](https://smcorona.firebaseapp.com/)
