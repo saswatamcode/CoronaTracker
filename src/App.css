@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: #18191f;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+p {
+  color: aliceblue;
+  font-family: "Baloo 2", cursive;
+  font-size: 12px;
+}
+.logo {
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+.logo:hover {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+.heading {
+  font-family: "Baloo 2", cursive;
+  color: aliceblue;
+  font-size: 5em;
+  font-weight: 300;
+  text-shadow: 6px 6px 12px #0a0a0c, -6px -6px 12px #262832;
+}
+.sub {
+  font-family: "Baloo 2", cursive;
+  color: aliceblue;
+  font-size: 0em;
+  font-weight: 300;
+  text-shadow: 3px 3px 6px #0a0a0c, -3px -3px 6px #262832;
+}
+.selector {
+  background-color: #18191f;
+  width: 320px;
+  height: 90px;
+  border-radius: 50px;
+  box-shadow: 20px 20px 42px #0a0a0c, -20px -20px 42px #262832;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+}
+.customselect {
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  color: aliceblue;
+  background-color: #18191f;
+  border: none;
+  top: 10%;
+  margin: 10px;
+  position: relative;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  box-sizing: border-box;
+  width: 280px;
 }
 
-.App-link {
-  color: #61dafb;
+.block {
+  background: #18191f;
+  box-shadow: 20px 20px 42px #0a0a0c, -20px -20px 42px #262832;
+  font-family: "Baloo 2", cursive;
+  font-size: 36px;
+  padding: 1rem;
+  color: aliceblue;
+  border-radius: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cblock {
+  background: #18191f;
+  box-shadow: 20px 20px 42px #0a0a0c, -20px -20px 42px #262832;
+  font-family: "Baloo 2", cursive;
+  font-size: 36px;
+  padding: 1rem;
+  color: aliceblue;
+  border-radius: 50px;
+}
+.reblock {
+  background: #18191f;
+  box-shadow: 20px 20px 42px #0a0a0c, -20px -20px 42px #262832;
+  font-family: "Baloo 2", cursive;
+  font-size: 36px;
+  padding: 1rem;
+  color: aliceblue;
+  border-radius: 50px;
+}
+.con {
+  color: yellow;
+}
+.rec {
+  color: green;
+}
+.dea {
+  color: orange;
+}
+.spacing {
+  height: 150px;
+}
+@media screen and (min-width: 601px) {
+  .heading {
+    font-size: 7em;
   }
-  to {
-    transform: rotate(360deg);
+  .sub {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 4em;
+  }
+  .sub {
+    font-size: 3em;
   }
 }
