@@ -24,7 +24,7 @@ export default function Country() {
             onChange={handleCountryChange}
           >
             <option value="">Select Country</option>
-            {Object.entries(countries.countries).map(([country, code]) => (
+            {/*Object.entries(countries.countries).map(([country, code]) => (
               <option
                 selected={selectedCountry === countries.iso3[code]}
                 key={code}
@@ -32,7 +32,17 @@ export default function Country() {
               >
                 {country}
               </option>
-            ))}
+            ))*/
+            countries.countries.map((country) => (
+              <option
+              selected = {selectedCountry === country.iso3}
+              key = {country.iso3}
+              value = {country.iso3}
+              >
+                {country.name}
+              </option>
+            ))
+            }
           </select>
         </form>
       </div>
