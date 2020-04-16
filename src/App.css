@@ -106,6 +106,9 @@ p {
 .spacing {
   height: 150px;
 }
+.map{
+  width: 100%;
+}
 @media screen and (min-width: 601px) {
   .heading {
     font-size: 7em;
